@@ -6,3 +6,6 @@ if(bar){
     nav.classList.add('active');
   });
 };
+
+
+system ko samjhna
