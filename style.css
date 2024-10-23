@@ -1126,8 +1126,12 @@ footer .copyright{
   }
 
   /* Contact Page */
+  iframe {
+    width: 100%;
+}
   #contact-details{
     flex-direction: column;
+    padding: 30px 10px
   }
 
   #contact-details .details{
