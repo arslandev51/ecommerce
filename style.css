@@ -998,6 +998,9 @@ footer .copyright{
 }
 
 @media (max-width: 477px){
+  #navbar.active {
+    right: 150px;
+  }
   .section-p1{
     padding: 20px;
   }
