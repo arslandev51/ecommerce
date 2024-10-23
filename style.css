@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
 }
-
+ 
 h1{
   font-size: 50px;
   line-height: 64px;
@@ -998,6 +998,9 @@ footer .copyright{
 }
 
 @media (max-width: 477px){
+  #navbar.active {
+    right: 0;
+}
   .section-p1{
     padding: 20px;
   }
