@@ -1053,6 +1053,10 @@ footer .copyright{
     padding: 40px;
   }
 
+  #contact-details .map {
+    overflow-y: auto;
+  }
+
   #form-details form{
     width: 50%;
   }
