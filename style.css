@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
 }
- 
+
 h1{
   font-size: 50px;
   line-height: 64px;
@@ -840,6 +840,9 @@ footer .copyright{
 }
 
 /* Cart Page */
+#cart{
+  overflow-x: auto;
+}
 #cart table{
   width: 100%;
   border-collapse: collapse;
@@ -888,8 +891,66 @@ footer .copyright{
   font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
+  padding: 18px 0;
 }
 
+#cart table tbody tr td{
+  padding-top: 15px;
+}
+
+#cart table tbody td{
+  font-size: 13px;
+}
+
+#cart-add{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#coupon{
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+  padding-bottom: 15px;
+}
+
+#coupon input{
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+#subtotal{
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td{
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
 
 /* start media query */
 @media (max-width:799px){
@@ -998,9 +1059,6 @@ footer .copyright{
 }
 
 @media (max-width: 477px){
-  #navbar.active {
-    right: 0;
-}
   .section-p1{
     padding: 20px;
   }
@@ -1126,12 +1184,8 @@ footer .copyright{
   }
 
   /* Contact Page */
-  iframe {
-    width: 100%;
-}
   #contact-details{
     flex-direction: column;
-    padding: 30px 10px
   }
 
   #contact-details .details{
@@ -1141,6 +1195,7 @@ footer .copyright{
 
   #contact-details .map{
     width: 100%;
+    overflow-y: auto;
   }
 
   #form-details{
@@ -1152,6 +1207,20 @@ footer .copyright{
   #form-details form{
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  /* cart page */
+  #cart-add{
+    flex-direction: column;
+  }
+
+  #coupon{
+    width: 100%;
+  }
+
+  #subtotal{
+    width: 100%;
+    padding: 20px;
   }
 
 }
